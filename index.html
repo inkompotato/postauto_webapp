@@ -3,155 +3,179 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>Postauto - CS:GO Team</title>
+	<title>Postauto - CS:GO Team</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+	<!-- Custom styles -->
+	<link href="css/sidebar.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+	<div class="d-flex toggled" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">POSTAUTO</div>
-      <div class="list-group list-group-flush">
-        <a id="elementTab-1" data-toggle="tab" role="tab" aria-selected="" aria-controls="element1" href="#element1"
-          class="list-group-item list-group-item-action bg-light text-primary">Overview</a>
-        <a id="elementTab-2" data-toggle="tab" role="tab" aria-selected="" aria-controls="element2" href="#element2"
-          class="list-group-item list-group-item-action bg-light text-primary">Season 11</a>
-        <!-- add elements based on the number of seasons automatically -->
-        <a href="#" class="list-group-item list-group-item-action bg-light">Season 8</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Season 7</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Season 6</a>
+		<!-- Sidebar -->
+		<div class="bg-light border-left" id="sidebar-wrapper">
+			<div class="sidebar-heading">PST</div>
+			<div class="list-group list-group-flush">
+				<a id="elementTab-1" data-toggle="tab" role="tab" aria-selected="" aria-controls="element1" href="#element1"
+					class="list-group-item list-group-item-action bg-light text-primary">Overview</a>
+				<a id="elementTab-2" data-toggle="tab" role="tab" aria-selected="" aria-controls="element2" href="#element2"
+					class="list-group-item list-group-item-action bg-light text-primary">Season 11</a>
+				<!-- add elements based on the number of seasons automatically -->
+				<a href="#" class="list-group-item list-group-item-action bg-light">Season 8</a>
+				<a href="#" class="list-group-item list-group-item-action bg-light">Season 7</a>
+				<a href="#" class="list-group-item list-group-item-action bg-light">Season 6</a>
 
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+			</div>
+		</div>
+		<!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Teamspeak</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="menu-toggle">Toggle Menu</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">Postauto | Match History</a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="teamspeak.html">Teamspeak</a>
+						</li>
+						<li class="nav-item active">
+								<a class="nav-link" href="#">Matches</a>
+							</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="menu-toggle"><span class="navbar-toggler-icon"></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-      <div class="container-fluid">
-        <div class="tab-content" id="elements">
-          <div class="tab-pane fade show active" id="element1" role="tabpanel" aria-labelledby="sidebar-wrapper">
-            one
+			<div class="container-fluid">
+				<div class="tab-content" id="elements">
+					<!-- season tab 1 -->
+					<div class="tab-pane fade show active" id="element1" role="tabpanel" aria-labelledby="sidebar-wrapper">
+						one
 
-          </div>
+					</div>
 
-          <div class="tab-pane fade" id="element2" role="tabpanel" aria-labelledby="sidebar-wrapper">
-            two
-            <div class="card bg-light mb-3">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                Information about the performance for the whole season + MVP or Lineup
-              </div>
-            </div>
-            <div class="card bg-light mb-3">
-              <div class="card-header">
-                <ul class="nav nav-pills mb-3" id="matches-1-h" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="match-1-h" data-toggle="pill" href="#match-1-c" role="tab"
-                      aria-controls="match-1-c" aria-selected="true">Match #1</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="match-2-h" data-toggle="pill" href="#match-2-c" role="tab"
-                      aria-controls="match-2-c" aria-selected="false">Match #2</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="match-3-h" data-toggle="pill" href="#match-3-c" role="tab"
-                      aria-controls="match-3-c" aria-selected="false">Match #3</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <div class="tab-content" id="mactches-1-c">
-                  <div class="tab-pane fade show active" id="match-1-c" role="tabpanel" aria-labelledby="match-1-h">
-                    match #1
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Inferno</h5>
-                            <p class="card-text">Scoreboard and maybe additional information e.g. roundmatrix (like in strafe) or timeline, kills etc, maybe modules to select differnt statistics</p>
-                          </div>
-                          <div class="card-footer"><strong class="text-muted">Final Score (Map), PST win</strong></div>
-                        </div>
-                        <div class="card">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Train</h5>
-                            <p class="card-text">Again, match info for second map</p>
-                          </div>
-                          <div class="card-footer"><strong class="text-muted">Final Score (Map), XYZ win</strong></div>
-                        </div></div>
-                  </div>
-                  <div class="tab-pane fade" id="match-2-c" role="tabpanel" aria-labelledby="match-2-h">
-                    match #2
-                  </div>
-                  <div class="tab-pane fade" id="match-3-c" role="tabpanel" aria-labelledby="match-3-h">
-                    match #3
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-light mb-3">
-                <div class="card-header">99 damage liga</div>
-                <div class="card-body">
-                  Link zur 99Damage Liga, Social Media, Highlight Clips etc...
-                </div>
-              </div>
-          </div>
-        </div>
+					<!-- season tab 2 -->
+					<div class="tab-pane fade" id="element2" role="tabpanel" aria-labelledby="sidebar-wrapper">
+						<br />
+						<div class="card bg-light mb-3">
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								Information about the performance for the whole season + MVP or Lineup
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
 
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+							<!-- nav for matches -->
+							<div class="card-header">
+								<ul class="nav nav-pills mb-3" id="matches-1-h" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="match-1-h" data-toggle="pill" href="#match-1-c" role="tab"
+											aria-controls="match-1-c" aria-selected="true">Match #1</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="match-2-h" data-toggle="pill" href="#match-2-c" role="tab"
+											aria-controls="match-2-c" aria-selected="false">Match #2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="match-3-h" data-toggle="pill" href="#match-3-c" role="tab"
+											aria-controls="match-3-c" aria-selected="false">Match #3</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<!-- info about matches -->
+								<div class="tab-content" id="mactches-1-c">
 
-  </div>
-  <!-- /#wrapper -->
+									<!-- first match -->
+									<div class="tab-pane fade show active" id="match-1-c" role="tabpanel" aria-labelledby="match-1-h">
+										match #1
+										<!-- maps -->
+										<div class="card-group mb-3">
+											<div class="card">
+												<img src="..." class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Inferno</h5>
+													<p class="card-text">Scoreboard and maybe additional information e.g. roundmatrix (like in
+														strafe) or timeline, kills etc, maybe modules to select differnt statistics</p>
+												</div>
+												<div class="card-footer"><strong class="text-muted">Final Score (Map), PST win</strong></div>
+											</div>
+											<div class="card">
+												<img src="..." class="card-img-top" alt="...">
+												<div class="card-body">
+													<h5 class="card-title">Train</h5>
+													<p class="card-text">Again, match info for second map</p>
+												</div>
+												<div class="card-footer"><strong class="text-muted ">Final Score (Map), XYZ win</strong></div>
+											</div>
+										</div>
+										<div class="card bg-light mb-3">
+											<div class="card-header">Match conclusion</div>
+											<div class="card-body">
+												Conclusive info about the entire match
+											</div>
+										</div>
+									</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+									<!-- second match -->
+									<div class="tab-pane fade" id="match-2-c" role="tabpanel" aria-labelledby="match-2-h">
+										match #2
+									</div>
+									<div class="tab-pane fade" id="match-3-c" role="tabpanel" aria-labelledby="match-3-h">
+										match #3
+									</div>
+								</div>
+							</div>
+						</div>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+						<!-- info zur liga -->
+						<div class="card bg-light mb-3">
+							<div class="card-header">99 damage liga</div>
+							<div class="card-body">
+								Link zur 99Damage Liga, Social Media, Highlight Clips etc...
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Menu Toggle Script -->
+	<script>
+		$("#menu-toggle").click(function (e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
 
 </body>
 
