@@ -24,7 +24,7 @@
 		<!-- Sidebar -->
 		<div class="bg-light border-left" id="sidebar-wrapper">
 			<div class="sidebar-heading">PST</div>
-			<div class="list-group list-group-flush">
+			<div id="sidebar-elements" class="list-group list-group-flush">
 				<a id="elementTab-1" data-toggle="tab" role="tab" aria-selected="" aria-controls="element1" href="#element1"
 					class="list-group-item list-group-item-action bg-light text-primary">Overview</a>
 				<a id="elementTab-2" data-toggle="tab" role="tab" aria-selected="" aria-controls="element2" href="#element2"
@@ -46,6 +46,9 @@
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
+				<a class="btn btn-primary mainpagelink" href="https://potatotv.net" role="button" style="margin-right: 1rem;">potatoTV</a>
+
 				<a class="navbar-brand" href="#">Postauto | Match History</a>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -53,8 +56,8 @@
 							<a class="nav-link" href="about.html">About</a>
 						</li>
 						<li class="nav-item">
-								<a class="nav-link" href="api.html">API</a>
-							</li>
+							<a class="nav-link" href="api.html">API</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="teamspeak.html">Teamspeak</a>
 						</li>
@@ -98,15 +101,15 @@
 								<ul class="nav nav-pills mb-3" id="matches-1-h" role="tablist">
 									<li class="nav-item">
 										<a class="nav-link active" id="match-1-h" data-toggle="pill" href="#match-1-c" role="tab"
-											aria-controls="match-1-c" aria-selected="true">Match #1</a>
+											aria-controls="match-1-c" aria-selected="true">vs [match-1.opponent]</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" id="match-2-h" data-toggle="pill" href="#match-2-c" role="tab"
-											aria-controls="match-2-c" aria-selected="false">Match #2</a>
+											aria-controls="match-2-c" aria-selected="false">vs [match-2.opponent]</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" id="match-3-h" data-toggle="pill" href="#match-3-c" role="tab"
-											aria-controls="match-3-c" aria-selected="false">Match #3</a>
+											aria-controls="match-3-c" aria-selected="false">vs [match-3.opponent]</a>
 									</li>
 								</ul>
 							</div>
@@ -120,18 +123,18 @@
 										<!-- maps -->
 										<div class="card-group mb-3">
 											<div class="card">
-												<img src="..." class="card-img-top" alt="...">
+														<img src="img/de_cache.jpg" class="card-img-top" alt="...">
 												<div class="card-body">
-													<h5 class="card-title">Inferno</h5>
+													<h5 class="card-title">match1.map1</h5>
 													<p class="card-text">Scoreboard and maybe additional information e.g. roundmatrix (like in
 														strafe) or timeline, kills etc, maybe modules to select differnt statistics</p>
 												</div>
 												<div class="card-footer"><strong class="text-muted">Final Score (Map), PST win</strong></div>
 											</div>
 											<div class="card">
-												<img src="..." class="card-img-top" alt="...">
+												<img src="img/de_vertigo.jpg" class="card-img-top" alt="...">
 												<div class="card-body">
-													<h5 class="card-title">Train</h5>
+													<h5 class="card-title">match1.map2</h5>
 													<p class="card-text">Again, match info for second map</p>
 												</div>
 												<div class="card-footer"><strong class="text-muted ">Final Score (Map), XYZ win</strong></div>
@@ -165,6 +168,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="card">
 					<div class="card-body">
 						disclaimer stuff

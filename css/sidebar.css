@@ -98,6 +98,10 @@ body {
     color: #fff;
     background: none;
   }
+
+  .mainpagelink{
+    visibility: hidden;
+}
   
   @media(min-width:768px) {
     #wrapper {
@@ -120,7 +124,15 @@ body {
       position: relative;
       margin-right: 0;
     }
+
   }
+
+  @media(min-width:992px){
+    .mainpagelink{
+        visibility: visible;
+    }
+  }
+  
 
     /* width */
     ::-webkit-scrollbar {
